@@ -1,0 +1,9 @@
+{
+    "id": "penlab",
+    "host": "penlab.geocent.com",
+    "aliases": [
+        "penlab.geocent.com"
+    ],
+    "database": "penlab",
+    "sql": "databases/penlab/setup.sql"
+}
