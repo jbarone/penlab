@@ -1,8 +1,9 @@
-CREATE DATABASE penlab;
+CREATE DATABASE IF NOT EXISTS penlab;
 USE penlab;
 
+DROP TABLE If EXISTS accounts;
 CREATE TABLE accounts (
-    id int PRIMARY KEY,
+    id int PRIMARY KEY AUTO_INCREMENT,
     username varchar(255),
     password varchar(255),
     firstname varchar(255),
@@ -15,8 +16,9 @@ INSERT INTO accounts (id, username, password, firstname, lastname)
            (3, 'pparker', 'webber!', 'Peter', 'Parker');
 
 
+DROP TABLE If EXISTS bookmarks;
 CREATE TABLE bookmarks (
-    id int PRIMARY KEY,
+    id int PRIMARY KEY AUTO_INCREMENT,
     name varchar(255),
     url varchar(255)
 );
